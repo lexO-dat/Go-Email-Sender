@@ -14,7 +14,7 @@ go mod init [project name] && go mod tidy
 Then you can get the two go modules from github:
 
 ```bash
-go go get github.com/jordan-wright/email && go get github.com/stretchr/testify/require
+go get github.com/jordan-wright/email && go get github.com/stretchr/testify/require
 ```
 
 ### Obtaining Application-Specific Password
