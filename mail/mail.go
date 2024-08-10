@@ -56,7 +56,7 @@ func (sender *GmailSender) SendEmail(
 	for _, f := range attachFiles {
 		_, err := e.AttachFile(f)
 		if err != nil {
-			return fmt.Errorf("Error attaching file: %s", err)
+			return fmt.Errorf("error attaching file: %s", err)
 		}
 	}
 

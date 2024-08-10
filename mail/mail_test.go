@@ -6,9 +6,9 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-const EMAIL_SENDER_NAME = "Example Name"
-const EMAIL_SENDER_ADRESS = "examplemail@gmail.com"
-const EMAIL_SENDER_PASSWORD = "password that google give you"
+const EMAIL_SENDER_NAME = "Portfolio"
+const EMAIL_SENDER_ADRESS = "lucas.abello@mail.udp.cl"
+const EMAIL_SENDER_PASSWORD = "wflxxpmrtdvnmhhm"
 
 func TestNewGmailSender(t *testing.T) {
 
@@ -21,9 +21,9 @@ func TestNewGmailSender(t *testing.T) {
 	<p>Hello world!</p>
 	`
 
-	to := []string{"exampledestination@gmail.com"}
+	to := []string{"lucas.abello@mail.udp.cl"}
 
-	attachFiles := []string{"rute to your file to send"}
+	attachFiles := []string{"C:/Users/DELL G15/Documents/GitHub/Go-Email-Sender/test.txt"}
 
 	err := sender.SendEmail(subject, content, to, nil, nil, attachFiles)
 
